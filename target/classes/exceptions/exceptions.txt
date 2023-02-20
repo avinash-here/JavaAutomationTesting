@@ -1,0 +1,5 @@
+## Create the following class in exceptions package :
+
+PersonException :
+
+- make this class a user-defined checked exception.

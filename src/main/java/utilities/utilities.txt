@@ -1,0 +1,7 @@
+## Create the following class in utilities package :
+
+EMUtil :
+
+- This class will contain only one static method.
+- `public static EntityManager provideEntityManager();`
+- This method should be used to get EntityManager for every implementation of `PersonDao` interface’s method.

@@ -1,0 +1,24 @@
+In this package create
+
+PersonDao Interface & PersonDaoImpl Class which will implement PersonDao Interface.
+
+Following three methods should be there in PersonDao interface.
+
+-------> Person addPerson(Person person) throws PersonException;
+
+Implementation of this method should insert a person which is passed as the argument in the method into the database(do not set id of the person while passing the person as it will be auto-generated)
+
+NOTE :- return the inserted person along with auto generated id if passed person is null throw a PersonException.
+
+
+-------> Person findPersonById(int id) throws PersonException;
+
+Implementation of this method should find a person from your database using id of the person passed as the argument
+
+NOTE :- return the person if the person with the required id is there but if no such person found throw a PersonException.
+
+-------> Person deletePerson(int id) throws PersonException;
+
+Implementation of this method should deleted a person from your database using id of the person passed as the argument
+
+NOTE :- return the person which you have deleted but if there is no such person found throw a PersonException.

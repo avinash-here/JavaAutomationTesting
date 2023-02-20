@@ -1,0 +1,14 @@
+## **Create the following entity class in entities package:**
+
+Person :
+
+`id : int`
+
+`name : String`
+
+`salary : double`
+
+- Create all the getters & setters required.
+- Provide a zero-argument constructor.
+- Names of the instance variables should be same as mentioned above.
+- `id` should be auto-generated [Use `GenerationType.IDENTITY`] & primary key.

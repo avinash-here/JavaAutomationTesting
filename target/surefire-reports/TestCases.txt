@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: TestCases
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 1.631 s <<< FAILURE! - in TestCases
+addPerson  Time elapsed: 1.51 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: method is returning a null value
+	at TestCases.addPerson(TestCases.java:21)
+
+addPersonException  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: method is not throwing Person Exception, even when we are passing null objects while adding an person ==> Expected exceptions.PersonException to be thrown, but nothing was thrown.
+	at TestCases.addPersonException(TestCases.java:40)
+
+findPersonById  Time elapsed: 0.067 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: method is not finding the person by id correctly ==> expected: <entities.Person@474e373b> but was: <null>
+	at TestCases.findPersonById(TestCases.java:56)
+
+findPersonByIdException  Time elapsed: 0.008 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: method is not throwing Person Exception when unknown id is passed while finding by id ==> Expected exceptions.PersonException to be thrown, but nothing was thrown.
+	at TestCases.findPersonByIdException(TestCases.java:77)
+
+deletePerson  Time elapsed: 0.033 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: method is not deleting the records with particular id correctly ==> expected: <null> but was: <entities.Person@1fabfe8d>
+	at TestCases.deletePerson(TestCases.java:100)
+
+deletePersonException  Time elapsed: 0.007 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: method is not throwing a Person Exception when an unknown id is passed while deleting person ==> Expected exceptions.PersonException to be thrown, but nothing was thrown.
+	at TestCases.deletePersonException(TestCases.java:123)
+
+buildScore  Time elapsed: 0 s
